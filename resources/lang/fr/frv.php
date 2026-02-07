@@ -1,0 +1,32 @@
+<?php
+return [
+    'title' => 'Qu\'est-ce qu\'un FRV ?',
+    'intro_text' => 'Un Fonds de Revenu de Retraite (FRV) est un compte d’épargne-retraite conçu pour fournir un revenu régulier à partir des sommes provenant d’un régime de retraite immobilisé (CRI ou RVER).',
+    'btn_convert' => 'Faire une conversion',
+    'btn_contact' => 'Contactez-nous',
+    'btn_calc' => 'Calculatrice de FRV',
+    'challenges_title' => 'Points défis du FRV',
+    'challenges' => [
+        'c1_title' => 'Conversion',
+        'c1_desc' => 'À 71 ans, conversion obligatoire du CRI/RVER en FRV ou rente.',
+        'c2_title' => 'Retraits imposables',
+        'c2_desc' => 'Les retraits s\'ajoutent à votre revenu imposable.',
+        'c3_title' => 'Limites de Retrait',
+        'c3_desc' => 'Limites minimales et maximales annuelles strictes.',
+        'c4_title' => 'Investissements',
+        'c4_desc' => 'Contient divers placements adaptés au titulaire.',
+    ],
+    'features' => [
+        'f1_title' => 'Transférabilité limitée',
+        'f1_desc' => 'Fonds généralement non transférables après conversion.',
+        'f2_title' => 'Conjoint Survivant',
+        'f2_desc' => 'Le conjoint désigné peut recevoir les paiements au décès.',
+        'f3_title' => 'Durée de vie limitée',
+        'f3_desc' => 'Nécessite souvent une liquidation sous forme de rente.',
+    ],
+    'disclaimer' => 'Les règles du FRV varient par province. Consultez un expert pour votre situation.',
+    'cta_contact' => 'Contactez-nous',
+    'info_text' => 'Les règles spécifiques du CRI et du FRV peuvent varier d’une province à l’autre au Canada.',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

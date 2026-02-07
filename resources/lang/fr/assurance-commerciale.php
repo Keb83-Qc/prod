@@ -1,0 +1,26 @@
+<?php
+return [
+    'title' => 'Qu\'est ce que l\'assurance commerciale ?',
+    'intro_text' => 'L’Assurance Commerciale joue un rôle crucial dans la protection de votre entreprise. Elle agit comme un bouclier financier, vous offrant une tranquillité d’esprit en cas d’événements imprévus tels que dommages matériels, vols, incendies ou responsabilités civiles.',
+    'btn_quote' => 'Faire une soumission',
+    'btn_contact' => 'Contactez-nous',
+    'pillars' => [
+        'p1_title' => 'Avenir assuré',
+        'p1_desc' => 'Assurez l\'avenir de votre entreprise avec une assurance commerciale fiable et flexible.',
+        'p2_title' => 'Partenariat Solide',
+        'p2_desc' => 'En partenariat avec Trushield Assurance, nous offrons des solutions adaptées.',
+        'p3_title' => 'Protection Complète',
+        'p3_desc' => 'Notre assurance protège contre les risques financiers, les sinistres matériels et la responsabilité civile.',
+        'p4_title' => 'Expertise & Sérénité',
+        'p4_desc' => 'Une équipe d\'experts vous accompagne. Choisissez la tranquillité d\'esprit.',
+    ],
+    'cost_title' => 'Les facteurs qui influencent le coût',
+    'cost_text' => 'Le coût moyen d’une assurance commerciale varie entre 1 000 et plus de 10 000$ par an, en fonction de la taille, du type d’entreprise et de son emplacement.',
+    'types_title' => 'Il existe deux types d’assurances commerciales',
+    'type_1_title' => 'L’assurance tous risques',
+    'type_1_desc' => 'Elle est plus complète et couvre un large éventail de situations, sauf exceptions spécifiques.',
+    'type_2_title' => 'L’assurance risques désignés',
+    'type_2_desc' => 'Moins chère, elle offre moins de protection et protège des pertes résultant de situations spécifiques.',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

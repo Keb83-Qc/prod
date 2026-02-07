@@ -1,0 +1,26 @@
+<?php
+return [
+    'title' => 'What is an Investment Loan?',
+    'intro_text' => 'An investment loan is a strategy allowing borrowing to make investments with a potential return higher than the cost of the loan (leverage effect).',
+    'btn_request' => 'Make a Request',
+    'btn_contact' => 'Contact Us',
+    'why_title' => 'Why Take Out an Investment Loan?',
+    'why_text' => 'The idea is to leverage financial power to increase investment capacity and potentially boost gains.',
+    'who_title' => 'Who Uses This Type of Loan?',
+    'user_1_title' => 'Real Estate Investors',
+    'user_1_desc' => 'To buy real estate properties while expecting value appreciation.',
+    'user_2_title' => 'Stock Market Investors',
+    'user_2_desc' => 'To buy stocks with the goal of realizing significant gains.',
+    'disclaimer' => 'Investment loans carry risks. Prudent management and understanding of costs are essential.',
+    'advantages_title' => 'Main Advantages of Investment Loans',
+    'adv_list' => [
+        'Benefit from market increases',
+        'Maximize investments while keeping liquidity',
+        'Diversify your portfolio',
+        'Potential tax deductibility of interest costs',
+        'Access to segregated fund benefits',
+        'Increase portfolio value (risk tolerance required)',
+    ],
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

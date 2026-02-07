@@ -1,0 +1,22 @@
+<?php
+return [
+    'title' => 'Assurance vie hypothécaire',
+    'intro_text' => 'L’assurance-vie hypothécaire est un type d’assurance conçu pour rembourser le solde d’un prêt hypothécaire en cas de décès de l’emprunteur.',
+    'btn_quote' => 'Obtenir une cotation',
+    'btn_contact' => 'Contactez-nous',
+    'why_title' => 'Pourquoi l’assurance-vie hypothécaire est essentielle ?',
+    'reason_1' => 'Protection financière pour la famille',
+    'reason_2' => 'Éviter la saisie immobilière',
+    'reason_3' => 'Soulagement émotionnel',
+    'compare_title' => 'Assurance Personnelle vs Institution Prêteuse',
+    'adv_1' => 'Personnalisation',
+    'adv_2' => 'Transférabilité',
+    'adv_3' => 'Stabilité des primes',
+    'adv_4' => 'Non imposable',
+    'adv_5' => 'Choix du bénéficiaire',
+    'adv_6' => 'Concurrence et choix',
+    'table_title' => 'Tableau comparatif',
+    'cta_btn' => 'Parler à un expert',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

@@ -1,0 +1,32 @@
+<?php
+return [
+    'title' => 'What is a LIF?',
+    'intro_text' => 'A Life Income Fund (LIF) is a retirement savings account designed to provide regular income from locked-in pension funds (LIRA or VRSP).',
+    'btn_convert' => 'Make a Conversion',
+    'btn_contact' => 'Contact Us',
+    'btn_calc' => 'LIF Calculator',
+    'challenges_title' => 'LIF Challenges',
+    'challenges' => [
+        'c1_title' => 'Conversion',
+        'c1_desc' => 'At age 71, mandatory conversion of LIRA/VRSP to LIF or annuity.',
+        'c2_title' => 'Taxable Withdrawals',
+        'c2_desc' => 'Withdrawals are added to your taxable income.',
+        'c3_title' => 'Withdrawal Limits',
+        'c3_desc' => 'Strict annual minimum and maximum limits.',
+        'c4_title' => 'Investments',
+        'c4_desc' => 'Contains various investments suited to the holder.',
+    ],
+    'features' => [
+        'f1_title' => 'Limited Transferability',
+        'f1_desc' => 'Funds generally not transferable after conversion.',
+        'f2_title' => 'Surviving Spouse',
+        'f2_desc' => 'Designated spouse can receive payments upon death.',
+        'f3_title' => 'Limited Lifespan',
+        'f3_desc' => 'Often requires liquidation as an annuity.',
+    ],
+    'disclaimer' => 'LIF rules vary by province. Consult an expert for your situation.',
+    'cta_contact' => 'Contact Us',
+    'info_text' => 'Specific rules for LIRA and LIF may vary from one province to another in Canada.',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

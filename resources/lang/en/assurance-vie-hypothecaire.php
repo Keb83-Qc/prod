@@ -1,0 +1,22 @@
+<?php
+return [
+    'title' => 'Mortgage Life Insurance',
+    'intro_text' => 'Mortgage life insurance is a type of insurance designed to pay off the balance of a mortgage loan in the event of the borrower\'s death.',
+    'btn_quote' => 'Get a Quote',
+    'btn_contact' => 'Contact Us',
+    'why_title' => 'Why is Mortgage Life Insurance Essential?',
+    'reason_1' => 'Financial Protection for Family',
+    'reason_2' => 'Avoid Foreclosure',
+    'reason_3' => 'Emotional Relief',
+    'compare_title' => 'Personal Insurance vs Lending Institution',
+    'adv_1' => 'Customization',
+    'adv_2' => 'Portability',
+    'adv_3' => 'Premium Stability',
+    'adv_4' => 'Tax-Free',
+    'adv_5' => 'Choice of Beneficiary',
+    'adv_6' => 'Competition and Choice',
+    'table_title' => 'Comparison Table',
+    'cta_btn' => 'Speak to an Expert',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

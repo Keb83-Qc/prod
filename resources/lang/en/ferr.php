@@ -1,0 +1,33 @@
+<?php
+return [
+    'title' => 'What is a RRIF?',
+    'intro_text' => 'The Registered Retirement Income Fund (RRIF) is a type of retirement account that allows tax deferral on funds until withdrawal. It is often used to convert RRSP funds at retirement age.',
+    'btn_convert' => 'Make a Conversion',
+    'btn_contact' => 'Contact Us',
+    'btn_calc' => 'RRIF Calculator',
+    'rules_list' => [
+        'r1' => '- Conversion rules from RRSP to RRIF vary according to CRA regulations.',
+        'r2' => '- Once in a RRIF, minimum annual withdrawals are mandatory to maintain tax integrity.',
+    ],
+    'key_points_title' => 'Key Points to Know About RRIF',
+    'points' => [
+        'p1_title' => 'RRSP Conversion',
+        'p1_desc' => 'RRSP must be converted to RRIF by age 71 at the latest.',
+        'p2_title' => 'Withdrawals and Income',
+        'p2_desc' => 'Withdrawals from a RRIF are taxable as income.',
+        'p3_title' => 'Withdrawal Limits',
+        'p3_desc' => 'Minimum annual limits apply.',
+        'p4_title' => 'Investments',
+        'p4_desc' => 'RRIF can hold various assets (stocks, bonds, etc.).',
+        'p5_title' => 'Transferability',
+        'p5_desc' => 'Transferable between institutions without tax impact.',
+        'p6_title' => 'Surviving Spouse',
+        'p6_desc' => 'The spouse can continue receiving payments upon death.',
+        'p7_title' => 'Limited Lifespan',
+        'p7_desc' => 'Some RRIFs require liquidation after a certain age.',
+    ],
+    'disclaimer' => 'It is recommended to consult an advisor to understand province-specific rules.',
+    'cta_contact' => 'Contact Us',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

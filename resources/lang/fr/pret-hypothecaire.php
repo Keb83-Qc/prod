@@ -1,0 +1,28 @@
+<?php
+return [
+    'title' => 'Qu\'est-ce qu\'un prêt hypothécaire ?',
+    'intro_text' => 'Le prêt hypothécaire est octroyé par une institution financière pour l\'achat d\'un bien immobilier. Il est garanti par une hypothèque sur la propriété achetée.',
+    'btn_rate' => 'Obtenir un taux',
+    'btn_contact' => 'Contactez-nous',
+    'aspects_title' => 'Les aspects importants du prêt hypothécaire',
+    'aspects' => [
+        'a1_title' => 'Garantie par l\'hypothèque',
+        'a1_desc' => 'La propriété sert de garantie en cas de non-paiement.',
+        'a2_title' => 'Taux & Remboursement',
+        'a2_desc' => 'Taux fixes ou variables, remboursement progressif du capital et intérêts.',
+        'a3_title' => 'Mise de fonds',
+        'a3_desc' => 'Pourcentage du prix d\'achat payé par l\'emprunteur (apport).',
+        'a4_title' => 'Durée du Prêt',
+        'a4_desc' => 'Période d\'amortissement, souvent 25 ans.',
+        'a5_title' => 'Frais et Charges',
+        'a5_desc' => 'Frais de clôture, évaluation, assurance hypothécaire, etc.',
+        'a6_title' => 'Amortissement',
+        'a6_desc' => 'Accumulation progressive de l\'équité (valeur nette) dans la maison.',
+    ],
+    'info_text_1' => 'Un prêt hypothécaire est un outil puissant pour acheter de l\'immobilier, mais il est crucial de comprendre les obligations financières associées.',
+    'info_text_2' => 'Il est recommandé de consulter un expert pour prendre des décisions éclairées.',
+    'disclaimer' => '*Le service de courtage hypothécaire est offert par des partenaires indépendants.',
+    'cta_btn' => 'Obtenir un taux hypothécaire',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

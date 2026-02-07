@@ -1,0 +1,33 @@
+<?php
+return [
+    'title' => 'Qu’est-ce qu’un FERR ?',
+    'intro_text' => 'Le Fonds enregistré de revenu de retraite (FERR) est un type de compte de retraite qui permet de reporter l’impôt sur les fonds placés jusqu’à leur retrait. Il est souvent utilisé pour convertir les fonds d\'un REER à l\'âge de la retraite.',
+    'btn_convert' => 'Faire une conversion',
+    'btn_contact' => 'Contactez-nous',
+    'btn_calc' => 'Calculatrice FERR',
+    'rules_list' => [
+        'r1' => '- Les conditions de conversion du REER en FERR varient selon les règles de l\'ARC.',
+        'r2' => '- Une fois dans un FERR, des retraits minimums annuels sont obligatoires pour maintenir l\'intégrité fiscale.',
+    ],
+    'key_points_title' => 'Les points clés à savoir sur le FERR',
+    'points' => [
+        'p1_title' => 'Conversion du REER',
+        'p1_desc' => 'Le REER doit être transformé en FERR au plus tard à 71 ans.',
+        'p2_title' => 'Retraits et Revenus',
+        'p2_desc' => 'Les retraits d\'un FERR sont imposables comme revenu.',
+        'p3_title' => 'Limites de Retrait',
+        'p3_desc' => 'Des limites minimales s\'appliquent annuellement.',
+        'p4_title' => 'Investissements',
+        'p4_desc' => 'Le FERR peut contenir divers actifs (actions, obligations, etc.).',
+        'p5_title' => 'Transférabilité',
+        'p5_desc' => 'Transférable entre institutions sans incidence fiscale.',
+        'p6_title' => 'Conjoint Survivant',
+        'p6_desc' => 'Le conjoint peut continuer à recevoir les paiements en cas de décès.',
+        'p7_title' => 'Durée de vie limitée',
+        'p7_desc' => 'Certains FERR nécessitent une liquidation après un certain âge.',
+    ],
+    'disclaimer' => 'Il est recommandé de consulter un conseiller pour comprendre les règles spécifiques à votre province.',
+    'cta_contact' => 'Contactez-nous',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

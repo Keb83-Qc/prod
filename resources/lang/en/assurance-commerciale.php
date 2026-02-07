@@ -1,0 +1,26 @@
+<?php
+return [
+    'title' => 'What is Commercial Insurance?',
+    'intro_text' => 'Commercial Insurance plays a crucial role in protecting your business. It acts as a financial shield, offering peace of mind in the event of unforeseen events such as property damage, theft, fire, or civil liability.',
+    'btn_quote' => 'Get a Quote',
+    'btn_contact' => 'Contact Us',
+    'pillars' => [
+        'p1_title' => 'Secured Future',
+        'p1_desc' => 'Secure your business future with reliable and flexible commercial insurance.',
+        'p2_title' => 'Solid Partnership',
+        'p2_desc' => 'In partnership with Trushield Insurance, we offer tailored solutions.',
+        'p3_title' => 'Complete Protection',
+        'p3_desc' => 'Our insurance protects against financial risks, property damage, and liability.',
+        'p4_title' => 'Expertise & Serenity',
+        'p4_desc' => 'A team of experts supports you. Choose peace of mind.',
+    ],
+    'cost_title' => 'Factors Influencing Cost',
+    'cost_text' => 'The average cost of commercial insurance varies between $1,000 and over $10,000 per year, depending on the size, type of business, and location.',
+    'types_title' => 'There are two types of commercial insurance',
+    'type_1_title' => 'All Risks Insurance',
+    'type_1_desc' => 'It is more comprehensive and covers a wide range of situations, except for specific exclusions.',
+    'type_2_title' => 'Named Perils Insurance',
+    'type_2_desc' => 'Cheaper, it offers less protection and covers losses resulting from specific situations described in the contract.',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

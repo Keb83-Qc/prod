@@ -1,0 +1,28 @@
+<?php
+return [
+    'title' => 'What is a Mortgage Loan?',
+    'intro_text' => 'A mortgage loan is granted by a financial institution for the purchase of real estate. It is secured by a mortgage on the purchased property.',
+    'btn_rate' => 'Get a Rate',
+    'btn_contact' => 'Contact Us',
+    'aspects_title' => 'Important Aspects of a Mortgage Loan',
+    'aspects' => [
+        'a1_title' => 'Mortgage Guarantee',
+        'a1_desc' => 'The property serves as collateral in case of non-payment.',
+        'a2_title' => 'Rate & Repayment',
+        'a2_desc' => 'Fixed or variable rates, progressive repayment of principal and interest.',
+        'a3_title' => 'Down Payment',
+        'a3_desc' => 'Percentage of the purchase price paid by the borrower.',
+        'a4_title' => 'Loan Term',
+        'a4_desc' => 'Amortization period, often 25 years.',
+        'a5_title' => 'Fees and Charges',
+        'a5_desc' => 'Closing costs, appraisal, mortgage insurance, etc.',
+        'a6_title' => 'Amortization',
+        'a6_desc' => 'Progressive accumulation of equity (net value) in the home.',
+    ],
+    'info_text_1' => 'A mortgage loan is a powerful tool for buying real estate, but it is crucial to understand the associated financial obligations.',
+    'info_text_2' => 'It is recommended to consult an expert to make informed decisions.',
+    'disclaimer' => '*Mortgage brokerage service is offered by independent partners.',
+    'cta_btn' => 'Get a Mortgage Rate',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

@@ -1,0 +1,20 @@
+<?php
+return [
+    'title' => 'What is the TFSA?',
+    'intro_text' => 'The TFSA, or Tax-Free Savings Account, is a type of savings account offered in Canada that allows you to save money tax-free.',
+    'btn_open' => 'Open your TFSA',
+    'btn_contact' => 'Contact Us',
+    'btn_calc' => 'TFSA Calculator',
+    'contrib_title' => 'Contribution Room',
+    'contrib_text' => 'The contribution limit is $7,000 for 2025. From 2009 to today, the maximum contribution room is $102,000.',
+    'criteria_title' => 'Eligibility Criteria',
+    'crit_1' => 'Be 18 years of age',
+    'crit_2' => 'Be a Canadian tax resident',
+    'crit_3' => 'Have a Social Insurance Number',
+    'modalities_title' => 'TFSA Modalities',
+    'mod_1' => 'Withdrawal Rule',
+    'mod_2' => 'Transfer Rule',
+    'mod_3' => 'Types of Investments',
+    'blog_title' => 'Advice Zone',
+    'read_more' => 'Read more',
+];

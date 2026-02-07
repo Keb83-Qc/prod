@@ -1,0 +1,26 @@
+<?php
+return [
+    'title' => 'Qu\'est ce que le prêt pour investissement ?',
+    'intro_text' => 'Le prêt pour investissement est une stratégie permettant d’emprunter pour réaliser des investissements ayant un potentiel de rendement supérieur au coût du prêt (effet de levier).',
+    'btn_request' => 'Faire une demande',
+    'btn_contact' => 'Contactez-nous',
+    'why_title' => 'Pourquoi contracter un prêt investissement ?',
+    'why_text' => 'L’idée est de tirer parti de l’effet de levier financier pour augmenter la capacité d’investissement et potentiellement accroître les gains.',
+    'who_title' => 'Qui utilise ce type de prêt ?',
+    'user_1_title' => 'Les investisseurs immobiliers',
+    'user_1_desc' => 'Pour acheter des biens immobiliers en attendant une plus-value.',
+    'user_2_title' => 'Les investisseurs en bourse',
+    'user_2_desc' => 'Pour acheter des actions dans le but de réaliser des gains importants.',
+    'disclaimer' => 'Le prêt pour investissement comporte des risques. Une gestion prudente et une compréhension des coûts sont essentielles.',
+    'advantages_title' => 'Les principaux avantages du prêt pour investissement',
+    'adv_list' => [
+        'Profiter des hausses des marchés',
+        'Maximiser vos placements tout en gardant vos liquidités',
+        'Diversifier votre portefeuille',
+        'Profiter de la déductibilité des frais d’intérêts',
+        'Accès aux avantages des fonds distincts',
+        'Augmenter la valeur du portefeuille (tolérance au risque requise)',
+    ],
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

@@ -1,0 +1,20 @@
+<?php
+return [
+    'title' => 'Qu’est-ce que le CÉLI ?',
+    'intro_text' => 'Le CÉLI, ou Compte d’Épargne Libre d’Impôt, est un type de compte d’épargne offert au Canada qui permet de placer de l’argent à l’abri de l’impôt.',
+    'btn_open' => 'Ouvrir votre CELI',
+    'btn_contact' => 'Contactez-nous',
+    'btn_calc' => 'Calculatrice CELI',
+    'contrib_title' => 'Droits de cotisation',
+    'contrib_text' => 'Le plafond de cotisation est de 7 000 $ en 2025. De 2009 à aujourd\'hui, les droits de cotisation maximale sont de 102 000 $.',
+    'criteria_title' => 'Les critères d’admissibilité',
+    'crit_1' => 'Être âgé de 18 ans',
+    'crit_2' => 'Être résidant fiscal canadien',
+    'crit_3' => 'Avoir un numéro d’assurance sociale',
+    'modalities_title' => 'Les modalités du CÉLI',
+    'mod_1' => 'Règle de retrait',
+    'mod_2' => 'Règle de transfert',
+    'mod_3' => 'Types de placements',
+    'blog_title' => 'Zone conseils',
+    'read_more' => 'En savoir plus',
+];

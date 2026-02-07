@@ -1,0 +1,2 @@
+[16-Jan-2026 12:42:31 America/Toronto] PHP Fatal error:  Trait "Laravel\Sanctum\HasApiTokens" not found in /home1/zohqmtle/public_html/website_b53fa9be/app/Models/User.php on line 10
+[16-Jan-2026 13:02:04 America/Toronto] PHP Fatal error:  Cannot use Filament\Support\Colors\Color as Color because the name is already in use in /home1/zohqmtle/public_html/website_b53fa9be/app/Providers/Filament/AdminPanelProvider.php on line 20
