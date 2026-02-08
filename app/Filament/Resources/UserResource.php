@@ -14,6 +14,7 @@ use Filament\Forms\Components\Tabs;
 use Filament\Forms\Components\Section;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Employee;
 
 class UserResource extends Resource
 {
@@ -174,6 +175,22 @@ class UserResource extends Resource
                                         ->label('Code conseiller')
                                         ->maxLength(50),
 
+                                    Forms\Components\Select::make('zoho_id')
+                                        ->label('Compte Zoho People')
+                                        ->options(
+                                            fn() => Employee::query()
+                                                ->orderBy('name')
+                                                ->get()
+                                                ->mapWithKeys(fn($e) => [
+                                                    $e->zoho_id => "{$e->name} — {$e->email}" . ($e->employee_number ? " ({$e->employee_number})" : ''),
+                                                ])
+                                                ->toArray()
+                                        )
+                                        ->searchable()
+                                        ->preload()
+                                        ->placeholder('Aucun lien')
+                                        ->helperText("Choisis l'employé Zoho correspondant. (employees.zoho_id est synchronisé via Zoho People)")
+                                        ->unique(table: 'users', column: 'zoho_id', ignoreRecord: true),
                                 ]),
                         ]),
                 ]),
@@ -235,13 +252,26 @@ class UserResource extends Resource
                     ->label('Nom Complet')
                     ->searchable(['first_name', 'last_name'])
                     ->sortable(['last_name'])
-                    ->weight('bold'),
+                    ->weight('bold')
+                    ->wrap(false)
+                    ->size('sm'),
 
                 Tables\Columns\TextColumn::make('advisor_code')
-                    ->label('Code conseiller')
+                    ->label('Code')
                     ->searchable()
                     ->sortable()
-                    ->toggleable(),
+                    ->toggleable()
+                    ->wrap(false)          // 👈 évite le retour à la ligne
+                    ->size('sm'),
+
+                Tables\Columns\IconColumn::make('employee.status')
+                    ->label('Zoho')
+                    ->boolean(fn($record) => ($record->employee?->status ?? '') === 'Active')
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
+                    ->toggleable()
+                    ->alignCenter()
+                    ->width('60px'),
 
                 // ✅ Affichage du titre JSON en FR/EN
                 Tables\Columns\TextColumn::make('title_display')
@@ -249,7 +279,9 @@ class UserResource extends Resource
                     ->state(fn($record) => self::titleLabelFromJson(is_array($record->title?->name) ? $record->title->name : null))
                     ->badge()
                     ->color('info')
-                    ->sortable(),
+                    ->sortable()
+                    ->wrap(false)
+                    ->size('sm'),
 
                 Tables\Columns\TextColumn::make('role.name')
                     ->label('Rôle Système')

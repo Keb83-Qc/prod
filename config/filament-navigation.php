@@ -52,5 +52,6 @@ return [
 
         \App\Filament\Resources\TeamTitleResource::class => 5,
         \App\Filament\Resources\UserResource::class => 5,
+        \App\Filament\Resources\EmployeeResource::class => 5,
     ],
 ];

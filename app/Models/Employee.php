@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 
 class Employee extends Model
 {
@@ -19,8 +20,12 @@ class Employee extends Model
         'zoho_payload',
     ];
 
-
     protected $casts = [
         'zoho_payload' => 'array',
     ];
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'zoho_id', 'zoho_id');
+    }
 }

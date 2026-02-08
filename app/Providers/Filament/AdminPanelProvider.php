@@ -65,6 +65,19 @@ class AdminPanelProvider extends PanelProvider
                     /* Style Sidebar header */
                     .fi-sidebar-header { background-color: #0E1030 !important; border-bottom: 1px solid #c9a050; }
 
+                    /* ✅ Tables Filament plus compactes */
+                    .fi-ta-cell {
+                        padding-top: 0.35rem !important;
+                        padding-bottom: 0.25rem !important;
+                        padding-left: 0.5rem !important;
+                        padding-right: 0.35rem !important;
+                    }
+
+                    /* (Optionnel) réduit aussi la hauteur des lignes */
+                    .fi-ta-row {
+                        min-height: 2.25rem !important;
+                    }
+
                     @media print {
                         /* 1. Cacher tout le site sauf les modales */
                         body > *:not(.fi-modal),
@@ -113,6 +126,17 @@ class AdminPanelProvider extends PanelProvider
                         @page { margin: 1cm !important; }
                         body { background: white !important; padding: 0 !important; margin: 0 !important; }
                     }
+
+                    /* ✅ Sticky header actions (boutons en haut restent visibles) */
+                    .fi-header {
+                        position: sticky;
+                        top: 0;
+                        z-index: 40;
+                        background: rgba(15, 23, 42, 0.92); /* fond discret en dark mode */
+                        backdrop-filter: blur(6px);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                    }
+
                 </style>'
             )
 

@@ -11,6 +11,7 @@ use Filament\Models\Contracts\HasName;
 use Filament\Panel;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\Translatable\HasTranslations;
+use App\Models\Employee;
 
 class User extends Authenticatable implements HasName, FilamentUser
 {
@@ -21,10 +22,16 @@ class User extends Authenticatable implements HasName, FilamentUser
 
     const ROLE_SUPER_ADMIN = 'super_admin';
 
+    public function employee()
+    {
+        return $this->belongsTo(Employee::class, 'zoho_id', 'zoho_id');
+    }
+
     protected $fillable = [
         'first_name',
         'last_name',
         'email',
+        'zoho_id',
         'advisor_code',
         'password',
         'phone',

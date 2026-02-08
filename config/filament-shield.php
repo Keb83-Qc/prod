@@ -77,7 +77,9 @@ return [
             'FilamentInfoWidget',
         ],
 
-        'resources' => [],
+        'resources' => [
+            App\Filament\Resources\Shield\RoleResource::class,
+        ],
     ],
 
     'discovery' => [
