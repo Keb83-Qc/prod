@@ -33,6 +33,7 @@ return [
         \App\Filament\Resources\MessageResource::class => 1,
         \App\Filament\Resources\WikiArticleResource::class => 1,
         \App\Filament\Pages\CommissionCalculator::class => 1,
+        \App\Filament\Resources\AbfCaseResource::class => 1,
 
         \App\Filament\Resources\SubmissionResource::class => 2,
 
