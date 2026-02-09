@@ -17,6 +17,7 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Navigation\MenuItem;
 use Filament\Navigation\NavigationGroup;
+use Filament\Navigation\NavigationItem;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -78,7 +79,7 @@ class AdminPanelProvider extends PanelProvider
                     )
                     ->toArray()
             )
-
+            ->navigationItems($this->buildNavigationItems())
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -125,6 +126,29 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ]);
     }
+
+    private function buildNavigationItems(): array
+    {
+        $links = config('filament-navigation.links', []);
+
+        return collect($links)
+            ->sortBy('sort')
+            ->map(function (array $link) {
+                $item = NavigationItem::make($link['label'])
+                    ->label($link['label'])
+                    ->icon($link['icon'] ?? null)
+                    ->url(url($link['url']))
+                    ->group($link['group'] ?? null);
+
+                if (!empty($link['new_tab'])) {
+                    $item->openUrlInNewTab();
+                }
+
+                return $item;
+            })
+            ->toArray();
+    }
+
 
     private function globalStylesAndScripts(): string
     {

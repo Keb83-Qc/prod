@@ -12,19 +12,20 @@ use Filament\Forms\Components\Wizard\Step;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Actions\Action;
 use Illuminate\Database\Eloquent\Builder;
 
 class AbfCaseResource extends Resource
 {
     protected static ?string $model = AbfCase::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationLabel = 'Analyse des besoins financiers';
+    // protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    // protected static ?string $navigationLabel = 'Analyse des besoins financiers';
 
-    public static function getNavigationGroup(): ?string
-    {
-        return 'Espace Conseiller';
-    }
+    // public static function getNavigationGroup(): ?string
+    // {
+    //     return 'Espace Conseiller';
+    // }
 
     public static function getEloquentQuery(): Builder
     {
@@ -407,6 +408,12 @@ class AbfCaseResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make()->label('Ouvrir'),
+
+                Action::make('open_abf_panel')
+                    ->label('Ouvrir ABF (nouvel onglet)')
+                    ->icon('heroicon-o-arrow-top-right-on-square')
+                    ->url(fn($record) => url("/abf/abf-cases/{$record->id}/edit"))
+                    ->openUrlInNewTab(),
             ])
             ->defaultSort('updated_at', 'desc');
     }

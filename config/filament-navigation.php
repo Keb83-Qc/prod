@@ -33,7 +33,6 @@ return [
         \App\Filament\Resources\MessageResource::class => 1,
         \App\Filament\Resources\WikiArticleResource::class => 1,
         \App\Filament\Pages\CommissionCalculator::class => 1,
-        \App\Filament\Resources\AbfCaseResource::class => 1,
 
         \App\Filament\Resources\SubmissionResource::class => 2,
 
@@ -54,5 +53,17 @@ return [
         \App\Filament\Resources\TeamTitleResource::class => 5,
         \App\Filament\Resources\UserResource::class => 5,
         \App\Filament\Resources\EmployeeResource::class => 5,
+    ],
+
+    // ✅ Liens externes / panels séparés
+    'links' => [
+        [
+            'label' => 'Analyse des Besoins Financiers',
+            'icon'  => 'heroicon-o-arrow-top-right-on-square',
+            'url'   => '/abf',
+            'group' => 'Espace Conseiller', // le group existant
+            'sort'  => 1, // même niveau que AbfCaseResource
+            'new_tab' => true,
+        ],
     ],
 ];
