@@ -3,8 +3,8 @@
 namespace App\Filament\Resources\AbfCaseResource\Pages;
 
 use App\Filament\Resources\AbfCaseResource;
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
+use Filament\Support\Enums\MaxWidth;
 
 class CreateAbfCase extends CreateRecord
 {
@@ -16,5 +16,17 @@ class CreateAbfCase extends CreateRecord
         $data['advisor_code'] = auth()->user()->advisor_code;
 
         return $data;
+    }
+
+    public function getExtraBodyAttributes(): array
+    {
+        $attributes = parent::getExtraBodyAttributes();
+        $attributes['class'] = trim(($attributes['class'] ?? '') . ' abf-fullwidth');
+        return $attributes;
+    }
+
+    public function getMaxContentWidth(): MaxWidth|string|null
+    {
+        return MaxWidth::Full;
     }
 }

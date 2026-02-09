@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Services\AbfCaseCalculator;
 use Illuminate\Database\Eloquent\Model;
 
 class AbfCase extends Model
@@ -25,8 +26,21 @@ class AbfCase extends Model
         'signed_at' => 'datetime',
     ];
 
-    public function advisor()
+    protected static function booted(): void
     {
-        return $this->belongsTo(User::class, 'advisor_user_id');
+        static::saving(function (self $case): void {
+            $payload = $case->payload ?? [];
+
+            /** @var AbfCaseCalculator $calculator */
+            $calculator = app(AbfCaseCalculator::class);
+
+            $case->results = $calculator->calculate($payload);
+        });
+    }
+
+    public function getProgressPercentAttribute(): ?int
+    {
+        $p = $this->results['progress']['percent'] ?? null;
+        return $p === null ? null : (int) $p;
     }
 }

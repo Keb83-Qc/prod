@@ -1,0 +1,127 @@
+/* =============================================================================
+FULL SCREEN GLOBAL
+============================================================================= */
+.fi-page,
+.fi-page-header,
+.fi-page-body,
+.fi-main,
+.fi-main-ctn,
+.fi-container,
+.fi-section,
+.fi-card,
+.fi-ta-ctn,
+.fi-fo-component-ctn,
+.fi-fo-wizard,
+.fi-fo-wizard>* {
+    max-width: none !important;
+}
+
+.fi-fo-wizard.fi-contained,
+.fi-fo-wizard.fi-contained>* {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.fi-main,
+.fi-page-body {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+@media (min-width: 1536px) {
+
+    .fi-main,
+    .fi-page-body {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+/* =============================================================================
+THEME / GLOBAL
+============================================================================= */
+.fi-sidebar-header {
+    background-color: #0E1030 !important;
+    border-bottom: 1px solid #c9a050;
+}
+
+/* =============================================================================
+TABLES COMPACT
+============================================================================= */
+.fi-ta-cell {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.25rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.35rem !important;
+}
+
+.fi-ta-row {
+    min-height: 2.25rem !important;
+}
+
+/* =============================================================================
+STICKY HEADER
+============================================================================= */
+.fi-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* =============================================================================
+PRINT (modales seulement)
+============================================================================= */
+@media print {
+
+    body>*:not(.fi-modal),
+    .fi-sidebar,
+    .fi-topbar,
+    .fi-layout-main-topbar {
+        display: none !important;
+    }
+
+    .fi-modal {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .fi-modal:not(:last-child) {
+        display: none !important;
+    }
+
+    .fi-modal-window {
+        visibility: visible !important;
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: white !important;
+    }
+
+    .fi-modal-footer,
+    .fi-modal-close-btn,
+    .fi-btn,
+    .fi-icon-btn,
+    .fi-modal-close-overlay {
+        display: none !important;
+    }
+
+    @page {
+        margin: 1cm !important;
+    }
+
+    body {
+        background: white !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
