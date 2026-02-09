@@ -195,13 +195,33 @@ TABLES (plus compact)
 /* ==========================================================================
 STICKY HEADER (boutons toujours visibles)
 ========================================================================== */
+/* Page header sticky, mais limité à la zone main */
 .fi-header {
     position: sticky;
     top: 0;
-    z-index: 40;
+    z-index: 50 !important; /* OK, sidebar est 1000 */
     background: rgba(15, 23, 42, 0.92);
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ✅ Sidebar au-dessus du header sticky */
+.fi-sidebar {
+    z-index: 1000 !important;
+}
+
+/* (Optionnel) renforce les éléments internes */
+.fi-sidebar-header,
+.fi-sidebar-nav {
+    z-index: 61 !important;
+}
+
+/* ✅ Sur desktop, on “décale” le header pour qu’il commence après la sidebar */
+@media (min-width: 1024px) {
+    .fi-header {
+        left: var(--fi-sidebar-width, 18rem);
+        width: calc(100% - var(--fi-sidebar-width, 18rem));
+    }
 }
 
 /* ==========================================================================

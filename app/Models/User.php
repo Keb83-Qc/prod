@@ -240,13 +240,25 @@ class User extends Authenticatable implements HasName, FilamentUser
 
     // --- HELPERS ---
 
-    public function hasRoleByName(string $roleName): bool
+    public function hasRoleByName(string|array $roleName): bool
     {
-        if ($this->role && $this->role->name === $roleName) {
-            return true;
+        $roles = is_array($roleName) ? $roleName : [$roleName];
+
+        foreach ($roles as $r) {
+            // 1) ton role_id (relation role)
+            if ($this->role && $this->role->name === $r) {
+                return true;
+            }
+
+            // 2) fallback Spatie
+            if (method_exists($this, 'hasRole') && $this->hasRole($r)) {
+                return true;
+            }
         }
-        return $this->hasRole($roleName);
+
+        return false;
     }
+
 
     public static function getAvailableLanguages(): array
     {
