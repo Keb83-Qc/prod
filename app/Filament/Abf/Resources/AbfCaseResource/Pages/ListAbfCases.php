@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\AbfCaseResource\Pages;
+namespace App\Filament\Abf\Resources\AbfCaseResource\Pages;
 
-use App\Filament\Resources\AbfCaseResource;
+use App\Filament\Abf\Resources\AbfCaseResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 

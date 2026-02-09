@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Abf\Resources;
 
-use App\Filament\Resources\AbfCaseResource\Pages;
+use App\Filament\Abf\Resources\AbfCaseResource\Pages;
 use App\Models\AbfCase;
 use Filament\Forms;
 use Filament\Forms\Form;
