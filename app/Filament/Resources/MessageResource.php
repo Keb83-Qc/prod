@@ -169,6 +169,7 @@ class MessageResource extends Resource
                                         $targetRoleId = $roleConseiller ? $roleConseiller->id : 3;
 
                                         $applicant->update(['role_id' => $targetRoleId]);
+                                        $applicant->syncRoles(['conseiller']); // ou ->assignRole('conseiller')
 
                                         $record->update([
                                             'body' => $record->body . "<br><br><strong>[TRAITÉ : VALIDÉ]</strong>",

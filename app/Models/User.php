@@ -12,6 +12,7 @@ use Filament\Panel;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\Translatable\HasTranslations;
 use App\Models\Employee;
+use App\Models\Role;
 
 class User extends Authenticatable implements HasName, FilamentUser
 {
@@ -87,6 +88,21 @@ class User extends Authenticatable implements HasName, FilamentUser
             if ($user->id !== 0 && empty($user->advisor_code)) {
                 $user->advisor_code = self::generateCustomAdvisorCode($user);
                 $user->saveQuietly();
+            }
+        });
+
+        static::saved(function (User $user) {
+            if ($user->wasChanged('role_id')) {
+                $roleName = $user->role?->name;
+
+                // Si pas de rôle ou rôle "en_attente", on retire les rôles spatie
+                if (! $roleName || $roleName === 'en_attente') {
+                    $user->syncRoles([]);
+                    return;
+                }
+
+                // Sinon on aligne Spatie sur role_id
+                $user->syncRoles([$roleName]);
             }
         });
     }
