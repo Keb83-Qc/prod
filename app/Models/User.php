@@ -124,9 +124,16 @@ class User extends Authenticatable implements HasName, FilamentUser
     // --- LOGIQUE FILAMENT ---
     public function canAccessPanel(Panel $panel): bool
     {
-        // Vérifie si l'utilisateur a un rôle autorisé (Super Admin ou Admin)
-        // Tu peux ajuster selon tes besoins
-        return $this->hasRole([self::ROLE_SUPER_ADMIN, 'admin', 'conseiller']);
+        // Si tu as ton helper hybride (role_id ou spatie), utilise-le :
+        $deny = ['en_attente'];
+
+        foreach ($deny as $role) {
+            if ($this->hasRoleByName($role)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public function getFilamentName(): string

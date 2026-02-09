@@ -9,6 +9,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Pages\SettingsPage;
+use Filament\Facades\Filament;
 
 class ManageSettings extends SettingsPage
 {
@@ -23,6 +24,22 @@ class ManageSettings extends SettingsPage
     public static function getNavigationSort(): ?int
     {
         return config('filament-navigation.sort.' . static::class);
+    }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        $user = Filament::auth()->user();
+
+        return $user
+            && ($user->hasRoleByName('super_admin') || $user->hasRoleByName('admin'));
+    }
+
+    public static function canAccess(): bool
+    {
+        $user = Filament::auth()->user();
+
+        return $user
+            && ($user->hasRoleByName('super_admin') || $user->hasRoleByName('admin'));
     }
 
     public function form(Form $form): Form

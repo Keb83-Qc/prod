@@ -27,6 +27,12 @@ class MessageResource extends Resource
         return 'Espace Conseiller';
     }
 
+    // public static function shouldRegisterNavigation(): bool
+    // {
+    //     return auth()->user()?->can('view_any_message') ?? false;
+    // }
+
+
     public static function getNavigationBadge(): ?string
     {
         $id = Filament::auth()->id();

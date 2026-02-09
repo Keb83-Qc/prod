@@ -48,7 +48,7 @@ return [
         \App\Filament\Resources\CompagnieInfoResource::class => 4,
         \App\Filament\Resources\VehicleBrandResource::class => 4,
         \App\Filament\Pages\AdvisorLinks::class => 4,
-        \App\Filament\Pages\ManageSettings::class => 4,
+        // \App\Filament\Pages\ManageSettings::class => 4,
 
         \App\Filament\Resources\TeamTitleResource::class => 5,
         \App\Filament\Resources\UserResource::class => 5,

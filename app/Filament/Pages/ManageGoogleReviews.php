@@ -11,6 +11,7 @@ use Filament\Forms\Components\PasswordInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Http; // Pour le test
 use App\Models\Setting; // Supposez que vous avez un modèle Setting
+use Filament\Facades\Filament;
 
 class ManageGoogleReviews extends Page implements HasForms
 {
@@ -22,6 +23,22 @@ class ManageGoogleReviews extends Page implements HasForms
     protected static ?string $navigationGroup = 'Paramètres';
 
     protected static string $view = 'filament.pages.manage-google-reviews';
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        $user = Filament::auth()->user();
+
+        return $user
+            && ($user->hasRoleByName('super_admin') || $user->hasRoleByName('admin'));
+    }
+
+    public static function canAccess(): bool
+    {
+        $user = Filament::auth()->user();
+
+        return $user
+            && ($user->hasRoleByName('super_admin') || $user->hasRoleByName('admin'));
+    }
 
     // Les variables pour le formulaire
     public ?array $data = [];
