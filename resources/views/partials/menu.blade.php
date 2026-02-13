@@ -42,6 +42,7 @@
 
                 <li class="nav-item"><a class="nav-link" href="/">{{ __('menu.nav.home') }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="/about">{{ __('menu.nav.about') }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="/management">{{ __('menu.nav.management') }}</a></li>
 
                 <!-- MEGA MENU (Desktop) -->
                 <li class="nav-item dropdown vip-mega d-none d-xl-block">
@@ -161,7 +162,6 @@
 
                 <!-- Liens normaux -->
                 <li class="nav-item"><a class="nav-link" href="/equipe">{{ __('menu.nav.team') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="/blog">{{ __('menu.nav.blog') }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="/carrieres">{{ __('menu.nav.careers') }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="/partenaires">{{ __('menu.nav.partners') }}</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contact">{{ __('menu.nav.contact') }}</a></li>

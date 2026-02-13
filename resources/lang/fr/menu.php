@@ -10,6 +10,7 @@ return [
     'nav' => [
         'home'        => 'Accueil',
         'about'       => 'À Propos',
+        'management'  => 'Gestion Privée',
         'services'    => 'Services',
         'team'        => 'Notre Équipe',
         'blog'        => 'Blog',

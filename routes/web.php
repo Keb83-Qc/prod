@@ -34,6 +34,9 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 // 2. PAGES STATIQUES (PageController)
 Route::get('/about', [PageController::class, 'about'])->name('about');
 
+// Route pour la Gestion de Patrimoine
+Route::get('/management', [PageController::class, 'management'])->name('management');
+
 // Menu Parent
 Route::get('/assurance', [PageController::class, 'assurances'])->name('assurance');
 Route::get('/epargne', [PageController::class, 'epargne'])->name('epargne');

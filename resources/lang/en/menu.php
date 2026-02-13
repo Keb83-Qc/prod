@@ -10,6 +10,7 @@ return [
     'nav' => [
         'home'        => 'Home',
         'about'       => 'About',
+        'management'  => 'Private Management',
         'services'    => 'Services',
         'team'        => 'Our Team',
         'blog'        => 'Blog',

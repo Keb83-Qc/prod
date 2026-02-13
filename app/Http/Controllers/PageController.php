@@ -532,4 +532,28 @@ class PageController extends Controller
             'careerSettings' => $careerSettings,
         ]);
     }
+
+    // --- PAGE GESTION DE PATRIMOINE ---
+
+    public function management()
+    {
+        // 1. Définition des variables pour le Header global
+        $title = __('management.hero_title');
+        $desc = __('management.hero_subtitle');
+        $img = asset('assets/img/management/hero-image.jpg'); // Image de fond du Hero
+
+        // 2. Retour de la vue avec les variables
+        return view('pages.management', [
+            'header_title' => $title,      // Sera affiché par header.blade.php
+            // 'header_subtitle' => $desc,    // Sera affiché par header.blade.php
+            'header_bg' => $img,           // Image de fond gérée par header.blade.php
+
+            // Optionnel : Ajouter un bouton dans le header si vous le souhaitez
+            // 'header_btn_text' => __('management.btn_appointment'),
+            // 'header_btn_link' => url('/rendez-vous'),
+
+            // Pour la section blog en bas de page
+            'conseils' => $this->getConseils(['Patrimoine', 'Finance', 'Investissement', 'Planification']),
+        ]);
+    }
 }
